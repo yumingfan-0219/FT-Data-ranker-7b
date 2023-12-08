@@ -23,9 +23,11 @@
 
 代码执行：
 1.使用data-juicer工具处理数据，具体参见环境配置指南
+
 1.1按照竞赛官方指引配置环境，具体参见https://tianchi.aliyun.com/competition/entrance/532158/customize405
-1.2
-对于英文数据集，我们先后使用bloom-oscar.yaml和redpajama-c4-refine.yaml进行采样
+
+1.2对于英文数据集，我们先后使用bloom-oscar.yaml和redpajama-c4-refine.yaml进行采样
+
 ```
 cd FT-Data-Ranker-7b-code-model\code-data\competition_kit\data-juicer
 python tools/process_data.py --config /data/bloom-oscar.yaml
@@ -65,5 +67,6 @@ python get_train_dataset_7b_1stage.py
 
 5.训练
 基于原提交指南的train_scripts/deepspeed_train_7b_lora.sh对train_bloom-c4-qwen14b-1w-summ.json进行训练，得到最终的模型FFT-Data-Ranker-7b-code-model/model/bloom-c4-qwen14b-1w-summ
+
 6.测试
 在80G的A100显卡上基于原提交指南中的competition_kit/lm-evaluation-harness/examples/challenge-7B-stage1.sh进行测试并提交结果
