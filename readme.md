@@ -8,7 +8,8 @@
 
 - 比赛官网：[FT-Data-Ranker Competition](https://tianchi.aliyun.com/competition/entrance/532158)
 - 环境配置指南：[Official Environment Setup](https://tianchi.aliyun.com/competition/entrance/532158/customize405)
-
+- 原始数据：[Original Data](https://cloud.189.cn/web/share?code=vEnyiqnaeQjm)
+- （访问码：4obl）
 ## 步骤概述
 
 1. **数据处理**：使用 `data-juicer` 工具处理英文和中文数据集。
