@@ -1,7 +1,24 @@
-FT-Data-Ranker：大语言模型微调数据竞赛--7B模型赛道--冠军方案
-比赛链接：https://tianchi.aliyun.com/competition/entrance/532158
-队伍：CTYUN-AI
-排名：1/377
+# FT-Data-Ranker: 7B Model Track - Champion Solution
+
+## 概览
+
+本项目是在 "FT-Data-Ranker：大语言模型微调数据竞赛 - 7B模型赛道" 中，队伍 CTYUN-AI 的冠军方案。本方案描述了我们如何配置环境、处理数据、训练模型，并在比赛中取得第1名的成绩。
+
+### 快速链接
+
+- 比赛官网：[FT-Data-Ranker Competition](https://tianchi.aliyun.com/competition/entrance/532158)
+- 环境配置指南：[Official Environment Setup](https://tianchi.aliyun.com/competition/entrance/532158/customize405)
+
+## 步骤概述
+
+1. **数据处理**：使用 `data-juicer` 工具处理英文和中文数据集。
+2. **第一阶段采样**：生成 `train_bloom-c4.json` 文件。
+3. **构建摘要数据**：生成 `train_bloom-c4-temp.json` 和 `train_bloom-c4-all-summ.jsonl` 文件。
+4. **第二阶段采样**：生成 `train_bloom-c4-qwen14b-1w-summ.json` 文件。
+5. **模型训练**：基于 DeepSpeed 训练脚本进行模型训练。
+6. **模型测试**：在 80G A100 显卡上测试模型并提交结果。
+
+## 详细步骤
 
 代码执行：
 1.使用data-juicer工具处理数据
