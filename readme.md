@@ -22,7 +22,7 @@
 ## 详细步骤
 
 代码执行：
-1.使用data-juicer工具处理数据
+1.使用data-juicer工具处理数据，具体参见环境配置指南
 1.1按照竞赛官方指引配置环境，具体参见https://tianchi.aliyun.com/competition/entrance/532158/customize405
 1.2
 对于英文数据集，我们先后使用bloom-oscar.yaml和redpajama-c4-refine.yaml进行采样
